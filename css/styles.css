@@ -23,13 +23,15 @@ p {
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -59,22 +61,13 @@ button {
 /* ============ INDEX.HTML==============*/
 
 /* BODY */
-body {
-    width: 1600px;
-    margin-left: 0;
-    margin-right: 0;
-    font-family: var(--primary-font);
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    background: var(--primary-background);
-}
 
 /* ================= HEADER ================= */
 .page-header {
     display: flex;
     align-items: center;
     height: 80px;
-    
+    border-bottom: 1px solid #ECECEC;
 }
 
 .page-nav {
@@ -104,10 +97,7 @@ body {
 .menu {
     display: flex;
     align-items: center;
-    margin-right: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 0;
+    
 }
 
 .menu-link {
@@ -118,11 +108,13 @@ body {
     color: var(--primary-text-color);
     list-style: none;
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 
 .menu-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 
 .menu-item:not(:last-child) {
@@ -168,15 +160,13 @@ body {
 /* =================  MAIN  ================= */
 
 /*  ================= HERO  ================= */
-.hero-container {
+.hero {
     background: var(--secondary-background);
-
+    padding: 200px 0;
+    text-align: center;
 }
 
 .hero-title {
-    padding-top: 200px;
-    padding-left: auto;
-    padding-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.5;
@@ -184,7 +174,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: var(--ternary-text-color);
-    
+    margin-bottom: 30px;
 }
 
 .modal-btn-container {
@@ -196,6 +186,8 @@ body {
 }
 
 .modal-btn {
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
@@ -215,15 +207,28 @@ body {
 /*  ================= /HERO  ================= */
 
 /*  ================= ABOUT  ================= */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+
 .about-title {
     display: none;
 }
 
 .about-list {
     display: flex;
-    align-items: center;
-    margin-right: 30px;
-    
+    gap: 30px;
 }
 
 .about-title-item {
@@ -233,7 +238,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
-    padding-bottom: 10px;
+    margin: 10px;
 }
 
 .about-paragraph {
@@ -245,12 +250,16 @@ body {
 /*  ================= /ABOUT  =================*/
 
 /*  ================= WORK  =================*/
+.work-section {
+    padding-top: 0;
+}
+
+
 .work-container {
     padding-top: 118px;
     padding-bottom: 94px;
     padding-left: auto;
     padding-right: auto;
-
 }
 
 .work-team-title {
@@ -277,16 +286,13 @@ body {
 
 /* ================= TEAM  ================= */
 .team-section {
-    background: var(-quinary-bacground);
+    background: var(--quinary-bacground);
 }
 
 .menu-team {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .team-cards {
@@ -320,32 +326,19 @@ body {
 /* /BODY */
 
 /*  ================= FOOTER  ================= */
-.footer-text {
-    list-style: none;
-    text-decoration: none;
-    background: var(--secondary-background);
-}
-
-.footer-container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 15px;
+    background: var(--secondary-background);
 }
-
-.logo-footer-link {
-    padding-top: 60px;
-    padding-left: 215px;
-    padding-bottom: 20px;
-
-} 
 
 .logo-footer {
     color: var(--ternary-text-color);
 }
 
 .adress-link {
-    padding-left: 215px;
-    padding-bottom: 9px;
+    margin-top: 20px;
+    margin-bottom: 9px;
 }
 .contact-adress {
     font-style: normal;
@@ -364,17 +357,20 @@ body {
 
 /* ============ PORTFOLIO.html ============ */
 .button-menu {
+    justify-content: center;
     display: flex;
     align-items: center;
-    margin-top: 94px;
     margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+.button-menu-item {
+    margin-right: 8px;
+}
+
+
 .menu-btn {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     padding-left: 22px;
     padding-right: 22px;
     font-weight: 500;
@@ -384,8 +380,9 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     border-style: none;
-    margin-right: 8px;
+    
 }
+
 
 .menu-btn:hover,
 .menu-btn:focus {
@@ -395,19 +392,21 @@ body {
 
 .menu-portfolio {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 56px;
-    padding-bottom: 94px;
+}
+
+.portfolio-cards {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-subscription {
-    border: 1px solid #EEEEEE:
-    border-top: none
+    border: 1px solid #EEEEEE;
+    border-top: none;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
 }
 
 .portfolio-title {
@@ -418,6 +417,7 @@ body {
     color: var(--primary-text-color);
     text-decoration: none;
     margin-bottom: 4px;
+
 }
 
 .portfolio-paragraph {
