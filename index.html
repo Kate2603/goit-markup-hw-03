@@ -15,26 +15,37 @@
 
 <body>
     <!-- HEADER-->
-    <header class="page-header container">
-        <nav class="page-nav">
-            <a class="logo logo-link link" href="index.html" lang="en">Web<span class="logo-heater">Studio</span></a>
-            <ul class="menu list">
-                <li class="menu-item"><a class="menu-link  current" href="index.html">Студія</a></li>
-                <li class="menu-item"><a class="menu-link" href="portfolio.html">Портфоліо</a></li>
-                <li class="menu-item"><a class="menu-link" href="contact.html">Контакты</a></li>
+    <header class="">
+        <div class="page-header container">
+            <nav class="page-nav">
+                <a class="logo logo-link link" href="index.html" lang="en">Web<span class="logo-heater">Studio</span></a>
+                <ul class="menu list">
+                    <li class="menu-item"><a class="menu-link  current" href="index.html">Студія</a></li>
+                    <li class="menu-item"><a class="menu-link" href="portfolio.html">Портфоліо</a></li>
+                    <li class="menu-item"><a class="menu-link" href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="list contact">
+                <li class="menu-contact">
+                    <svg class="contact-icon" width="16" height="12">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <a class="contact-list link contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="menu-contact">
+                    <svg class="contact-icon" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-tel"></use>
+                    </svg>
+                    <a class="contact-list link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-    
-        <ul class="list contact">
-            <li><a class="contact-list link contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-list link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <!--MAIN-->
     <main>
         <!--HERO-->
         <section class="hero">
-            <div class="container">
+            <div class="background">
                 <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
                 <button class="modal-btn modal-btn-container" type="button">Замовити послугу</button>
             </div>
@@ -45,18 +56,30 @@
                 <h2 class="visually-hidden"></h2>
                 <ul class="about-list list">
                     <li>
+                        <svg width="70" height="70">
+                            <use href="./images/sprite.svg#icon-antenna"></use>
+                        </svg>
                         <h3 class="about-title-item">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="about-paragraph">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
                     <li>
+                        <svg width="70" height="70">
+                            <use href="./images/sprite.svg#icon-clock"></use>
+                        </svg>
                         <h3 class="about-title-item">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="about-paragraph">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
                     <li>
+                        <svg width="70" height="70">
+                            <use href="./images/sprite.svg#icon-diagram"></use>
+                        </svg>
                         <h3 class="about-title-item">ПЛАНУВАННЯ</h3>
                         <p class="about-paragraph">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li>
+                        <svg width="70" height="70">
+                            <use href="./images/sprite.svg#icon-astronaut"></use>
+                        </svg>
                         <h3 class="about-title-item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="about-paragraph">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -66,7 +89,7 @@
                 <!--WORK-->
         <section class="section work-section">
             <div class="container">
-                <h2 class="work-team-title">Чим ми займаємося</h2>
+                <h2 class="all-titles">Чим ми займаємося</h2>
                 <ul class="list work-img-container">
                     <li>
                         <img class="work-img" src="./images/about/img0.jpg" alt="фото людина друкує на комп'ютері" width="370px" height="294px">
@@ -83,7 +106,7 @@
         <!--TEAM-->
         <section class="section team-section">
             <div class="container">
-                <h2 class="work-team-title">Наша команда</h2>
+                <h2 class="all-titles">Наша команда</h2>
                 <ul class="list menu-team">
                     <li class="team-cards">
                         <img class="team-img" src="./images/team/igor.jpg" alt="Фото Ігор Дем'яненко" width="270px" height="260px"/>
@@ -116,17 +139,31 @@
                 </ul>
             </div>
         </section>
+        <!--CLIENTS-->
+        <section class="section">
+            <div class="container">
+                <h2 class="all-titles">Постійні клієнти</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!--FOOTER-->
     <footer class="footer">
         <div class=" container">
-            <a class="logo-link link" href="index.html" lang="en">Web<span class="logo-footer">Studio</span></a>
+            <a class="logo-link logo-footer-link link" href="index.html" lang="en">Web<span class="logo-footer">Studio</span></a>
             <address>
                 <ul class="list">
                     <li class="adress-link"><a class="contact-adress list link" href="https://goo.gl/maps/ARjSeqXz5D1srHnS8" target="_blank"
                             rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
                     <li class="adress-link"><a class="contact-list list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="contact-list list link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="adress-link"><a class="contact-list list link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </address>
         </div>
