@@ -11,7 +11,7 @@
     --quaternary-bacground: #000000;
     --quinary-bacground: #F5F4FA;
     --primary-color: #EEEEEE;
-
+    --secondary-color: #FFFFFF;
 }
 
 h1,
@@ -102,7 +102,6 @@ body {
 .menu {
     display: flex;
     align-items: center;
-    
 }
 
 .menu-item:not(:last-child) {
@@ -137,7 +136,9 @@ body {
 }
 
 .contact-icon{
+    color:#757575;
     fill: currentColor;
+    margin-right: 10px;
 } 
 
 .contact {
@@ -200,7 +201,6 @@ body {
     padding-bottom: 200px;
     padding-left: auto;
     padding-right: auto;
-
 }
 
 .modal-btn {
@@ -238,15 +238,25 @@ body {
     margin: -1px;
 }
 
-
-
 .about-title {
     display: none;
 }
 
 .about-list {
     display: flex;
+    justify-content: center;
     gap: 30px;
+}
+
+.about-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .about-title-item {
@@ -296,10 +306,6 @@ body {
     gap: 30px;
 }
 
-.work-img {
-    
-}
-
 /*  ================= /WORK  =================*/
 
 /* ================= TEAM  ================= */
@@ -311,11 +317,6 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
-}
-
-.team-cards {
-    flex-basis: calc((100% - 90px)/4);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team-subscription {
@@ -339,8 +340,12 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-bottom: 16px;
 }
+
+
 /* ================= /TEAM  ================= */
+
 /*  ================= /MAIN  ================= */
 /* /BODY */
 
@@ -349,6 +354,10 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--secondary-background);
+}
+
+.footer-list {
+
 }
 
 .logo-footer-link {
@@ -374,6 +383,17 @@ body {
 .contact-adress:focus {
     color: var(--quaternary-text-color);
 }
+
+.footer-paragraph {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--ternary-text-color);
+}
+
+
 /*  ================= /FOOTER  =================*/
 /* ============ /INDEX.html ============ */
 
@@ -402,8 +422,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     border-style: none;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    
 }
 
 
@@ -417,11 +435,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.portfolio-cards {
-    flex-basis: calc((100% - 60px) / 3);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-subscription {
@@ -441,7 +454,6 @@ body {
     color: var(--primary-text-color);
     text-decoration: none;
     margin-bottom: 4px;
-
 }
 
 .portfolio-paragraph {
