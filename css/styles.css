@@ -130,17 +130,6 @@ body {
     color: var(--quaternary-text-color);
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
-    color:#2196F3;
-}
-
-.contact-icon{
-    color:#757575;
-    fill: currentColor;
-    margin-right: 10px;
-} 
-
 .contact {
     display: flex;
     align-items: center;
@@ -178,11 +167,7 @@ body {
 }
 
 .background {
-    background-image: linear-gradient(rgba(47,
-        48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/bg.jpg');
-    background: #C4C4C4(47, 48, 58, 0.4);
-    background-size: cover;
-    background-position: border-box;
+    background: #2F303A
 }
 
 .hero-title {
