@@ -68,10 +68,13 @@ body {
   background-color: var(--main-background);
 }
 /* ================= HEADER ================= */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-menu {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -134,9 +137,13 @@ body {
 .contact {
   display: flex;
   align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.contact-menu:not(:last-child) {
+.contact__menu:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -176,10 +183,12 @@ body {
   text-transform: capitalize;
   color: var(--thirdth-text-color);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
 }
 
-.modal-btn {
+.hero-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -194,8 +203,8 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 4px;
@@ -218,22 +227,9 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.about-title {
-  margin-bottom: 72px;
-}
-
-.about-title-item {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--secondth-text-color);
-  margin-bottom: 8px;
 }
 
 .about-list {
@@ -250,6 +246,16 @@ body {
 
 .about-card-content {
   padding: 32px 0;
+}
+
+.about-title-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondth-text-color);
+  margin-bottom: 8px;
 }
 
 .about-paragraph {
