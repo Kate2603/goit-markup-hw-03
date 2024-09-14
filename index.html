@@ -19,10 +19,10 @@
   </head>
 
   <body>
-    <!-- HEADER-->
-    <header>
-      <div class="page-header container">
-        <nav class="page-nav">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-menu container">
+        <nav class="header-nav">
           <a class="logo logo-link link" href="index.html" lang="en"
             >Web<span class="logo-heater">Studio</span></a
           >
@@ -31,10 +31,10 @@
               <a class="menu-link current" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="">Portfolio</a>
+              <a class="menu-link" href="#">Portfolio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="">Contacts</a>
+              <a class="menu-link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -60,48 +60,58 @@
     <main>
       <!--HERO-->
       <section class="hero background">
-        <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
-        <button class="modal-btn" type="button">Order Service</button>
+        <div class="conteiner">
+          <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
+          <button class="modal-btn" type="button">Order Service</button>
+        </div>
       </section>
 
-      <!--ABOUT-->
+      <!-- ABOUT -->
       <section class="section">
         <div class="container">
           <h2 class="about-title visually-hidden">Our Services</h2>
           <ul class="about-list list">
-            <li>
-              <h3 class="about-title-item">Strategy</h3>
-              <p class="about-paragraph">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
+            <li class="about-cards">
+              <div class="about-card-content">
+                <h3 class="about-title-item">Strategy</h3>
+                <p class="about-paragraph">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </div>
             </li>
-            <li>
-              <h3 class="about-title-item">Punctuality</h3>
-              <p class="about-paragraph">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
+            <li class="about-cards">
+              <div class="about-card-content">
+                <h3 class="about-title-item">Punctuality</h3>
+                <p class="about-paragraph">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </div>
             </li>
-            <li>
-              <h3 class="about-title-item">Diligence</h3>
-              <p class="about-paragraph">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
+            <li class="about-cards">
+              <div class="about-card-content">
+                <h3 class="about-title-item">Diligence</h3>
+                <p class="about-paragraph">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </div>
             </li>
-            <li>
-              <h3 class="about-title-item">Technologies</h3>
-              <p class="about-paragraph">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
+            <li class="about-cards">
+              <div class="about-card-content">
+                <h3 class="about-title-item">Technologies</h3>
+                <p class="about-paragraph">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!--TEAM-->
+      <!-- TEAM-->
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -163,10 +173,10 @@
       </section>
 
       <!--PORTFOLIO-->
-      <section class="section portfolio">
+      <section class="portfolio section">
         <div class="container">
-          <h2 class="section-title">Our Portfolio</h2>
-          <ul class="portfolio-menu list link">
+          <h2 class="portfolio-title">Our Portfolio</h2>
+          <ul class="portfolio-menu list">
             <li class="portfolio-cards">
               <img
                 class="portfolio-img"

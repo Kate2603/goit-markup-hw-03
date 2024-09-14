@@ -53,8 +53,8 @@ button {
 
 .container {
   max-width: 1158px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -68,21 +68,23 @@ body {
   background-color: var(--main-background);
 }
 /* ================= HEADER ================= */
-.page-header {
+.header-menu {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.page-nav {
+.header-nav {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .logo {
   margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-link {
@@ -102,12 +104,11 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  gap: 40px;
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 0;
 }
 
 .menu-link {
@@ -118,6 +119,7 @@ body {
   color: var(--secondth-text-color);
   list-style: none;
   text-decoration: none;
+  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -132,9 +134,6 @@ body {
 .contact {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .contact-menu:not(:last-child) {
@@ -160,7 +159,7 @@ body {
 
 /*  ================= HERO  ================= */
 .hero {
-  padding: 188px 0;
+  padding: 120px 0;
   text-align: center;
 }
 
@@ -169,12 +168,14 @@ body {
 }
 
 .hero-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--thirdth-text-color);
+  text-align: center;
   margin-bottom: 48px;
 }
 
@@ -186,8 +187,9 @@ body {
   color: var(--thirdth-text-color);
   background-color: var(--thirdth-background);
   cursor: pointer;
-  border-radius: 4px;
-  display: flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   align-items: center;
   text-align: center;
   margin-left: auto;
@@ -196,14 +198,14 @@ body {
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
-  border-style: none;
+  border-radius: 4px;
+  border: none;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--fourth-background);
 }
-
 /*  ================= /HERO  ================= */
 
 /*  ================= ABOUT  ================= */
@@ -221,7 +223,7 @@ body {
 }
 
 .about-title {
-  display: none;
+  margin-bottom: 72px;
 }
 
 .about-title-item {
@@ -241,13 +243,21 @@ body {
   padding: 120px 0;
 }
 
+.about-cards {
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.about-card-content {
+  padding: 32px 0;
+}
+
 .about-paragraph {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-
 /*  ================= /ABOUT  ================= */
 
 /* ================= TEAM  ================= */
@@ -259,7 +269,8 @@ body {
 .team-menu {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .section-title {
@@ -275,11 +286,20 @@ body {
 
 .team-list {
   background-color: var(--main-background);
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 3 * 24px) / 4);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-img {
+  width: 100%;
+  height: auto;
 }
 
 .team-subscription {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
+  text-align: center;
 }
 
 .team-name {
@@ -288,7 +308,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondth-text-color);
-  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -297,7 +316,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -321,9 +339,7 @@ body {
 .portfolio-subscription {
   border: 1px solid #eeeeee;
   border-top: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
 }
 
 .portfolio-title {
@@ -332,7 +348,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondth-text-color);
-  text-decoration: none;
   margin-bottom: 8px;
 }
 
@@ -341,7 +356,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  text-decoration: none;
 }
 
 /* ============ /PORTFOLIO ============ */
@@ -350,8 +364,7 @@ body {
 
 /*  ================= FOOTER  ================= */
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   background-color: var(--secondth-background);
 }
 
@@ -360,18 +373,16 @@ body {
 }
 
 .logo-footer-link {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
 .footer-text {
-  display: block;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  list-style: none;
-  text-decoration: none;
   color: var(--fifth-text-color);
-  background-color: var(--secondth-background);
 }
 
 /*  ================= /FOOTER  ================= */
