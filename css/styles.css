@@ -135,15 +135,18 @@ body {
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  gap: 40px;
   margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.contact__menu:not(:last-child) {
+.contact-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact__item:not(:last-child) {
   margin-right: 40px;
 }
 
