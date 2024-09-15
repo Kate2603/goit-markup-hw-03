@@ -166,7 +166,7 @@ body {
 
 /*  ================= HERO  ================= */
 .hero {
-  padding: 120px 0;
+  padding: 188px 0;
   text-align: center;
 }
 
@@ -220,16 +220,16 @@ body {
 /*  ================= ABOUT  ================= */
 .visually-hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  margin: -1px;
+  overflow: hidden;
 }
 
 .about-list {
@@ -239,7 +239,7 @@ body {
   padding: 120px 0;
 }
 
-.about-cards {
+.about-card {
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -248,7 +248,7 @@ body {
   padding: 32px 0;
 }
 
-.about-title-item {
+.about-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -335,15 +335,16 @@ body {
 .portfolio-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
-.portfolio-cards {
+.portfolio-card {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-subscription {
-  border: 1px solid #eeeeee;
+  border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
 }
