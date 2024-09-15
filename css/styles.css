@@ -226,8 +226,8 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset (100%);
-  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -240,7 +240,7 @@ body {
 
 .about-item {
   flex-basis: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 
 .about-card {
